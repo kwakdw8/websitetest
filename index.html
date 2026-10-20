@@ -58,6 +58,7 @@ section { position: relative; }
 .hl { background: linear-gradient(var(--highlight), var(--highlight)) no-repeat 0 90% / 100% 0.36em; padding-inline: 0.1em; margin-inline: -0.1em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .h-xl { font-size: clamp(40px, 7vw, 78px); line-height: 1.12; }
 .h-2 { font-size: clamp(30px, 4.4vw, 44px); line-height: 1.25; }
+.nw { white-space: nowrap; }
 .label { font-weight: 700; color: var(--accent-text); letter-spacing: 0.02em; }
 .eyebrow { font-weight: 700; color: var(--accent-text); letter-spacing: 0.08em; font-size: 14px; text-transform: uppercase; }
 .lede { font-size: 18px; max-width: 34em; }
@@ -232,7 +233,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px 32px; fl
   .hero-copy > :nth-child(3) { animation-delay: 0.35s; }
   .hero-copy > :nth-child(4) { animation-delay: 0.5s; }
   .hero h1 .hl { animation: sweep 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.8s backwards; }
-  .hero h1 .hl:nth-of-type(2) { animation-delay: 1.2s; }
+  .hero h1 .hl:nth-of-type(4) { animation-delay: 1.2s; }
   .stat { animation: rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) calc(0.8s + var(--i, 0) * 0.12s) backwards; }
   .b1 { animation: drift 16s ease-in-out infinite alternate; }
   .b2 { animation: drift 12s ease-in-out infinite alternate-reverse; }
@@ -282,7 +283,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px 32px; fl
     <div class="hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">ISO Tank Container 전문 국제물류주선업체</p>
-        <h1 class="h-xl">한 해 <span class="hl">8,691 Tank</span>, 액체 화물은 <span class="hl">자유로</span>에 맡기세요</h1>
+        <h1 class="h-xl"><span class="hl">ISO Tank</span><br><span class="nw">한 길 19년,</span><br><span class="nw">액체 화물의</span><br><span class="hl">처음과 끝</span>을<br>책임집니다</h1>
         <p class="lede">2007년부터 액상 식음료, 화학제품, 액화가스를 탱크 컨테이너로 운송해 왔습니다. 해상·항공·내륙 운송부터 전용 탱크 임대 알선과 위탁 운영까지 한 팀이 맡습니다.</p>
         <div class="cta">
           <a class="btn" href="#contact">견적 문의하기</a>
